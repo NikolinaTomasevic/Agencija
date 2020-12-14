@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- SUBHEADER -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>About Us</h1>
+          </div>
+        </div>
+      </div>
+
+    <!-- Glavna strana -->
+    <section id="page" class="about">
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><span class="secondary-text">Youtube</span> Organization</h2>
+            <button id = "ajde" class="pristupi" name="button" type="button">Next paragraph</button>
+            <p class="pojava">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <hr>
+            <h2><span class="secondary-text">Who</span> are our clients?</h2>
+            <button id = "molim_te" class="pristupi" name="button" type="button">Click to see what we do</button>
+            <p class="pojavaDva" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id = "galerija">
+      <div class="row">
+        <div class="column">
+          <img src="./images/youtuber1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./images/youtuber2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./images/youtuber3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./images/youtuber4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="./images/youtuber1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./images/youtuber2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./images/youtuber3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./images/youtuber4.jpg" style="width:100%">
+          </div>
+
+
+          <!-- Listanje slika -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./images/youtuber1.jpg" onclick="currentSlide(1)" alt="Dunja Jovanic">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./images/youtuber2.jpg" onclick="currentSlide(2)" alt="Lepa svaki dan">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./images/youtuber3.jpg" onclick="currentSlide(3)" alt="Nadja Stanojevic">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./images/youtuber4.jpg" onclick="currentSlide(4)" alt="Zorannah">
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!-- COMPANY -->
+    <section id="company">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>Contact Us</h4>
+            <ul>
+              <li> 0038166000000</li>
+              <li> support@gmail.com</li>
+              <li> Jove Ilica, Beograd</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>About Us</h4>
+            <p>Made by <br> Jovana Comic <br> Jelena Curcic <br> Nikolina Tomasevic</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>Join us</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+            <form>
+              <input type="email" name="email" placeholder="Enter Email" required>
+              <button type="submit" name="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+      </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){      
+        $("#ajde").click(function(){
+           $(".pojava").hide(5000);
+        });
+
+        $("#molim_te").click(function(){
+           $(".pojavaDva").show(5000);
+        });
+      });
+    </script>
+    <script src="./js/galerija.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.countdown {
+    margin: 50px;
+    
+    display: inline-block;
+    font-size: 32px;
+    height: 42px;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .countdown .count {
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+  }
